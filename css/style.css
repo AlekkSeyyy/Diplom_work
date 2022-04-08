@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "PhilosopherRegular";
+  src: url(../fonts/Philosopher-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "RobotoMedium";
+  src: url(../fonts/Roboto-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PhilosopherBold";
+  src: url(../fonts/Philosopher-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url(../fonts/Roboto-Italic.ttf) format("truetype");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.containerALL {
+  background-color: #7E8C91;
+  background-image: url("../images/pngegg.png");
+}
+
+.header {
+  background-color: #91766B;
+}
+
+.header__imag img {
+  width: 9vw;
+  border-radius: 100px;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+.header__imag img:hover {
+  -webkit-box-shadow: 10px 10px 10px black;
+          box-shadow: 10px 10px 10px black;
+}
+
+@media (max-width: 1200px) {
+  .header__imag img {
+    width: 20vw;
+    display: block;
+    margin: 0 auto;
+  }
+}
+.header__title {
+  font-size: 30px;
+  font-family: "PhilosopherRegular";
+  color: #333649;
+  text-shadow: black 2px 2px 2px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.header__title:hover {
+  text-shadow: black 3px 8px 3px;
+}
+
+.headerFooter__navi li:first-child {
+  padding-right: 40px;
+}
+.headerFooter__navi li:nth-child(2) {
+  padding-right: 40px;
+}
+
+.telega {
+  display: block;
+  background-image: url("../images/telegram_social_media_chat_communication_icon_193320.png");
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.telega:hover {
+  width: 55px;
+  height: 55px;
+}
+
+.Behanc {
+  display: block;
+  background-image: url("../images/behance_portfolio_network_social_media_icon_193325.png");
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.Behanc:hover {
+  width: 55px;
+  height: 55px;
+}
+
+.pintr {
+  display: block;
+  background-image: url("../images/pinterest_inspiration_ideas_creativity_icon_193314.png");
+  width: 45px;
+  height: 45px;
+  background-size: contain;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.pintr:hover {
+  width: 55px;
+  height: 55px;
+}
+
+@media (max-width: 1434px) {
+  .headerFooter__navi li:first-child {
+    padding-right: 0px;
+  }
+  .headerFooter__navi li:nth-child(2) {
+    padding-right: 0px;
+  }
+
+  .telega, .Behanc, .pintr {
+    width: 60px;
+    height: 60px;
+  }
+}
+.container-xxl {
+  background-color: #6B8691;
+  background-image: url("../images/pngegg (5).png");
+  background-repeat: no-repeat;
+  background-position-x: 55%;
+  background-position-y: 2%;
+}
+
+.buy_link {
+  font-size: 20px;
+  font-family: "PhilosopherBold";
+  color: #91766B;
+  text-shadow: black 0px 0px 5px;
+  font-weight: 900;
+  text-decoration: none;
+}
+
+.content__title {
+  font-size: 30px;
+  font-family: "PhilosopherRegular";
+  color: #333649;
+  text-shadow: black 2px 2px 2px;
+  margin: 20px 0px;
+}
+
+.content__imgBlock img {
+  width: 70%;
+  position: relative;
+  -webkit-box-shadow: 0 5px 5px black;
+          box-shadow: 0 5px 5px black;
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-transition: 3s;
+  transition: 3s;
+  border-radius: 20px;
+}
+.content__imgBlock img:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  z-index: 2;
+  margin: 0 auto;
+  -webkit-box-shadow: 40px 10px 10px black;
+          box-shadow: 40px 10px 10px black;
+  border-radius: 0px;
+}
+.content__imgBlock img:active {
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  z-index: 2;
+  -webkit-box-shadow: 40px 10px 10px black;
+          box-shadow: 40px 10px 10px black;
+  border-radius: 0px;
+}
+
+.content__imgBlock {
+  margin: 0 auto;
+  margin: 30px 30px 30px 30px;
+}
+
+.aboutAutor__text {
+  color: #334946;
+  font-size: 18px;
+  font-family: "Roboto-Italic";
+  text-shadow: white 0px 0px 2px;
+  font-weight: 900;
+  padding: 20px;
+}
+
+@media (max-width: 1200px) {
+  .content__imgBlock img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+.content__txt {
+  color: #334946;
+  font-size: 18px;
+  font-family: "Roboto-Italic";
+  text-shadow: white 0px 0px 2px;
+  font-weight: 900;
+  margin-top: 20px;
+}
+
+@media (max-width: 1200px) {
+  .content__txt {
+    text-align: center;
+  }
+}
+footer {
+  background-color: #91766B;
+}
+
+.footer__TEXT {
+  color: #334946;
+  font-size: 18px;
+  font-family: "Roboto-Italic";
+  text-shadow: white 0px 0px 2px;
+  font-weight: 900;
+}

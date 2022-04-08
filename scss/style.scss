@@ -1,0 +1,232 @@
+
+
+@font-face{
+  font-family: 'PhilosopherRegular';
+  src: url(../fonts/Philosopher-Regular.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'RobotoMedium';
+  src: url(../fonts/Roboto-Medium.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'PhilosopherBold';
+  src: url(../fonts/Philosopher-Bold.ttf) format('truetype');
+}
+@font-face{
+  font-family: 'Roboto-Italic';
+  src: url(../fonts/Roboto-Italic.ttf) format('truetype');
+  }
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+
+$bgColor1: #6B8691;
+$bgColor2: #91766B;
+$bgColor3: #7E8C91;
+
+@mixin font1{
+	font-size: 30px;
+	font-family: 'PhilosopherRegular';
+	color: #333649;
+	text-shadow: black 2px 2px 2px;
+}
+@mixin font2{
+	color: #334946;
+	font-size: 18px;
+	font-family: 'Roboto-Italic';
+	text-shadow: white 0px 0px 2px;
+	font-weight: 900;
+
+
+}
+@mixin font3{
+	color: #333649;
+	font-size: 30px;
+	font-family: 'RobotoMedium';
+}
+@mixin font4{
+	font-size: 20px;
+	font-family: 'PhilosopherBold';
+	color:$bgColor2;
+	text-shadow: black 0px 0px 5px;
+	font-weight: 900;
+}
+
+
+.containerALL{
+	background-color: $bgColor3;
+	 background-image: url('../images/pngegg.png')
+
+}
+
+
+.header{
+	background-color: $bgColor2;
+}
+
+
+.header__imag{
+	img{
+		width: 9vw;
+		border-radius: 100px;
+		transition: 3s;
+		&:hover{
+			box-shadow: 10px 10px 10px black;
+		}
+	}
+}
+@media(max-width: 1200px){
+	.header__imag img{
+	width: 20vw;
+	display: block;
+	margin: 0 auto;
+	}
+}
+
+.header__title{
+
+	@include font1;
+	transition: 1s;
+	&:hover{
+		text-shadow: black 3px 8px 3px;
+		}
+}
+.headerFooter__navi{
+	li:first-child{
+		padding-right: 40px;
+	}
+	li:nth-child(2){
+		padding-right: 40px;
+	}
+}
+.telega{
+	display: block;
+	background-image:url('../images/telegram_social_media_chat_communication_icon_193320.png');
+	width: 45px;
+	height: 45px;
+	background-size: contain;
+	transition: 1s;
+	&:hover{
+	width: 55px;
+	height: 55px;
+		}
+	}
+.Behanc{
+	display: block;
+	background-image:url('../images/behance_portfolio_network_social_media_icon_193325.png');
+	width: 45px;
+	height: 45px;
+	background-size: contain;
+	transition: 1s;
+	&:hover{
+	width: 55px;
+	height: 55px;
+
+	}
+}
+.pintr{
+	display: block;
+	background-image:url('../images/pinterest_inspiration_ideas_creativity_icon_193314.png');
+	width: 45px;
+	height: 45px;
+	background-size: contain;
+	transition: 1s;
+	&:hover{
+	width: 55px;
+	height: 55px;
+	}
+}
+
+@media(max-width: 1434px){
+	.headerFooter__navi{
+	li:first-child{
+		padding-right:0px;
+	}
+	li:nth-child(2){
+		padding-right: 0px;
+	}
+	}
+	.telega, .Behanc, .pintr{
+	width: 60px;
+	height: 60px;
+	}
+}
+
+
+.container-xxl{
+	 background-color: $bgColor1;
+	 background-image: url("../images/pngegg (5).png");
+	background-repeat: no-repeat;
+	background-position-x: 55%;
+	background-position-y:2%;
+}
+
+.buy_link{
+	@include font4;
+	text-decoration: none;
+}
+.content__title{
+	@include font1;
+	margin: 20px 0px;
+}
+.content__imgBlock{
+	img{
+	width: 70%;
+	position: relative;
+	box-shadow: 0 5px 5px black;
+	background-size: contain;
+	background-repeat: no-repeat;
+	transition: 3s;
+	border-radius: 20px;
+	&:hover{
+	transform:scale(1.2);
+	z-index: 2;
+	margin: 0 auto;
+	box-shadow: 40px 10px 10px black;
+	border-radius: 0px;
+	}
+	&:active{
+	transform:scale(3);
+	z-index: 2;
+	box-shadow: 40px 10px 10px black;
+	border-radius: 0px;
+	}
+}
+}
+
+
+.content__imgBlock{
+	margin: 0 auto;
+	margin: 30px 30px 30px 30px;
+}
+
+.aboutAutor__text{
+	@include font2;
+	padding: 20px;
+}
+@media(max-width: 1200px){
+	.content__imgBlock img{
+	display: block;
+	margin: 0 auto;
+	}
+}
+.content__txt{
+	@include font2;
+	margin-top: 20px;
+}
+@media(max-width: 1200px){
+	.content__txt {
+	text-align: center;
+	}
+}
+
+footer{
+	background-color: $bgColor2;
+}
+.footer__TEXT{
+	@include font2;
+}
+
